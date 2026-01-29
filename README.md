@@ -5,13 +5,7 @@ This project is a JavaScript mini gradebook that analyzes student marks, calcula
 
 Concepts Used
 
-Arrays
-
-Objects
-
-for loops
-
-if / else statements
+Arrays, Objects, for loops,if / else statements
 
 Rule: No use of map, filter, or reduce.
 

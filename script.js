@@ -25,5 +25,37 @@ for (let stdLoop = 0; stdLoop <students.length; stdLoop++){
   let average = total /students[stdLoop].marks.length;
   // console.log(`${students[stdLoop].name}'s average is ${average}`);
 
+  // grade assignment
+  let grade;
+  if (average >= 80){
+    grade = "A";
+  } else if (average >=70) {
+    grade = "B";
+  } else if (average >=60) {
+    grade = "C";
+  } else if (average >=50) {
+    grade = "D";
+  } else {
+    grade = "E";
+  }
+
   
 }
+
+  //summary
+  // console.log(
+  //   `SUMMARY
+
+  //   Total Number of students: ${students.length}
+  //   Pass: ${passCount}
+  //   Fail: ${students.length - passCount}
+  //   `
+  // )
+
+
+// Class Summary:
+// Students: 5
+// Pass: 3
+// Fail: 2
+// Top Student: Cynthia (88.5)
+// Lowest Student: David (43.5)
