@@ -1,68 +1,39 @@
-Student Marks Analyzer (Mini Gradebook)
+Student Marks Analyzer
+Overview
 
-Concepts covered: Objects, Arrays, for loops, if statements
-Estimated time: 1–2 hours
-Rule: Don’t use map, filter, reduce yet. Use for loops.
+This project is a JavaScript mini gradebook that analyzes student marks, calculates averages, assigns grades, and generates a class summary using basic control structures.
 
-Starter Data (copy/paste exactly)
-const students = [
-  { name: "Amina", marks: [78, 82, 91, 66] },
-  { name: "Brian", marks: [55, 49, 61, 58] },
-  { name: "Cynthia", marks: [88, 90, 84, 92] },
-  { name: "David", marks: [40, 35, 52, 47] },
-  { name: "Elsa", marks: [70, 73, 68, 75] }
-];
+Concepts Used
 
+Arrays
 
-Requirements
-1) Compute each student’s average
-Loop through the students array
-For each student, loop through their marks array
-Sum the marks, then calculate the average
+Objects
 
-2) Assign a grade using if statements
-Use this grading system:
+for loops
 
-A if average >= 80
-B if average >= 70
-C if average >= 60
-D if average >= 50
-E otherwise
+if / else statements
 
+Rule: No use of map, filter, or reduce.
 
-3) Create a new array called report
-Each item in report should be an object like this:
+Data Structure
 
-{ name: "Amina", average: 79.25, grade: "B", status: "PASS" }
+Each student is represented as an object with a name and an array of marks.
 
+Program Features
 
-Rules:
+Calculates each student’s average score
 
-status is "PASS" if average >= 60
-otherwise status is "FAIL"
+Assigns grades based on average
 
----
+Determines pass or fail status
 
-4) Print a clean class report + summary
-Print each student like:
+Prints a student report
 
+Displays a class summary including pass/fail count and top/lowest student
+
+Sample Output
 Amina: Avg 79.25 | Grade B | PASS
 Brian: Avg 55.75 | Grade D | FAIL
-...
-
-
-Then print a summary:
-
-Total number of students
-Number of PASS vs FAIL
-Top student (highest average) + average
-Lowest student (lowest average) + average
-
-
-Output Example (rough)
-Amina: Avg 79.25 | Grade B | PASS
-Brian: Avg 55.75 | Grade D | FAIL
-...
 
 Class Summary:
 Students: 5
