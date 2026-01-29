@@ -39,6 +39,15 @@ for (let stdLoop = 0; stdLoop <students.length; stdLoop++){
     grade = "E";
   }
 
+  // status assignment and pass counter
+  let status;
+  if (average >= 60){
+    status = "PASS";
+    passCount++; 
+  } else {
+    status = "FAIL";
+  }
+
   
 }
 
