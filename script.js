@@ -48,7 +48,24 @@ for (let stdLoop = 0; stdLoop <students.length; stdLoop++){
     status = "FAIL";
   }
 
-  
+  //report
+  // declaring empty array
+   let report = [];
+
+  //  passing values to the empty array
+  report.push(
+    {
+      name: `${students[stdLoop].name}`,
+      average: `${average}`,
+      grade: `${grade}`,
+      status: `${status}`
+    }
+  )
+ 
+  // report.forEach((Element) => console.log(Element))
+
+  console.log(`${students[stdLoop].name}: Avg ${average} | Grade: ${grade} | ${status}`);
+
 }
 
   //summary
